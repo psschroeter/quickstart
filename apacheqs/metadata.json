@@ -1,0 +1,30 @@
+{
+  "recommendations": {
+  },
+  "dependencies": {
+  },
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "license": "All rights reserved",
+  "description": "Installs/Configures apacheqs",
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "recipes": {
+    "apacheqs::default": "Install Apache"
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "version": "0.0.1",
+  "replacing": {
+  },
+  "name": "apacheqs",
+  "attributes": {
+  },
+  "maintainer_email": "YOUR_EMAIL",
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "groupings": {
+  }
+}
