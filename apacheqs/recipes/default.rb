@@ -15,7 +15,7 @@ end
 
 template "/var/www/html/index.html" do
   source "index.html.erb"
-  user root
-  group root
+  owner 'root'
+  group 'root'
   mode 0755
 end

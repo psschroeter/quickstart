@@ -22,6 +22,19 @@
   },
   "name": "apacheqs",
   "attributes": {
+    "quickstart/name": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "apacheqs::default"
+      ],
+      "display_name": "Your name",
+      "description": "Your name: Visible to the world!"
+    }
   },
   "maintainer_email": "YOUR_EMAIL",
   "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
