@@ -7,15 +7,22 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package "httpd"
-
-service "httpd" do
-  action :start
+r = gem_package "ruby-debug" do
+  action :nothing
 end
+r.run_action(:install)
 
-template "/var/www/html/index.html" do
-  source "index.html.erb"
-  owner 'root'
-  group 'root'
-  mode 0755
-end
+require 'rubygems'; require 'ruby-debug';
+
+# Omit the following assignment statment line if don't want to wait
+# for a client before continuing...
+Debugger.wait_connection = true
+Debugger.start_remote
+
+#package "httpd"
+
+#service "httpd" do
+#  action :start
+#end
+
+
