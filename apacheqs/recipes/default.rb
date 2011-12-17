@@ -17,8 +17,17 @@ require 'rubygems'; require 'ruby-debug';
 
 # Omit the following assignment statment line if don't want to wait
 # for a client before continuing...
-Debugger.wait_connection = true
-Debugger.start_remote
+#Debugger.wait_connection = true
+#Debugger.start_remote('localhost',9500)
+#ruby_block "debug" do
+#block do
+#debugger
+#end
+#action :create
+#end
+#
+
+raise "dieing"
 
 #package "httpd"
 
