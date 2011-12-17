@@ -11,6 +11,7 @@ r = gem_package "ruby-debug" do
   action :nothing
 end
 r.run_action(:install)
+Gem.clear_paths
 
 require 'rubygems'; require 'ruby-debug';
 
