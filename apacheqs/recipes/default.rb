@@ -27,7 +27,7 @@ require 'rubygems'; require 'ruby-debug';
 #end
 #
 
-raise "dieing"
+#raise "dieing"
 
 #package "httpd"
 
@@ -35,4 +35,4 @@ raise "dieing"
 #  action :start
 #end
 
-
+include_recipe "block_device"
