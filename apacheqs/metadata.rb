@@ -5,6 +5,6 @@ description      "Installs/Configures apacheqs"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 version          "0.0.1"
 
-depends "block_device"
+#depends "block_device"
 recipe 'apacheqs::default', 'Nothing, test for now'
 

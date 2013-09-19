@@ -1,31 +1,30 @@
 {
-  "dependencies": {
-    "block_device": ">= 0.0.0"
-  },
-  "name": "apacheqs",
-  "maintainer_email": "YOUR_EMAIL",
-  "attributes": {
-  },
-  "license": "All rights reserved",
-  "suggestions": {
-  },
-  "platforms": {
-  },
-  "maintainer": "YOUR_COMPANY_NAME",
-  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
-  "version": "0.0.1",
-  "recommendations": {
-  },
-  "recipes": {
-    "apacheqs::default": "Nothing, test for now"
+  "replacing": {
   },
   "groupings": {
   },
   "conflicting": {
   },
-  "replacing": {
+  "dependencies": {
   },
+  "suggestions": {
+  },
+  "recommendations": {
+  },
+  "attributes": {
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "license": "All rights reserved",
   "description": "Installs/Configures apacheqs",
+  "recipes": {
+    "apacheqs::default": "Nothing, test for now"
+  },
+  "name": "apacheqs",
   "providing": {
-  }
+  },
+  "maintainer_email": "YOUR_EMAIL",
+  "version": "0.0.1",
+  "platforms": {
+  },
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n"
 }

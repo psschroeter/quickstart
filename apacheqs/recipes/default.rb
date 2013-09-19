@@ -27,6 +27,7 @@ require 'rubygems'; require 'ruby-debug';
 #end
 #
 
+log "In the efault recipe" 
 #raise "dieing"
 
 #package "httpd"
@@ -35,4 +36,4 @@ require 'rubygems'; require 'ruby-debug';
 #  action :start
 #end
 
-include_recipe "block_device"
+#include_recipe "block_device"
