@@ -27,7 +27,9 @@ require 'rubygems'; require 'ruby-debug';
 #end
 #
 
-log "In the efault recipe" 
+log "In the default recipe"
+
+log "New default line"
 #raise "dieing"
 
 #package "httpd"
