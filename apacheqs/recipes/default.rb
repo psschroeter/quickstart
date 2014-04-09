@@ -7,13 +7,13 @@
 # All rights reserved - Do Not Redistribute
 #
 
-r = gem_package "ruby-debug" do
-  action :nothing
-end
-r.run_action(:install)
-Gem.clear_paths
+#r = gem_package "ruby-debug" do
+#  action :nothing
+#end
+#r.run_action(:install)
+#Gem.clear_paths
 
-require 'rubygems'; require 'ruby-debug';
+#require 'rubygems'; require 'ruby-debug';
 
 # Omit the following assignment statment line if don't want to wait
 # for a client before continuing...
@@ -27,15 +27,22 @@ require 'rubygems'; require 'ruby-debug';
 #end
 #
 
+require "chef/mixin/shell_out"
 log "In the default recipe"
 
-log "New default line"
-#raise "dieing"
 
-#package "httpd"
+class Chef::Recipe
+    include RightScale::RightImage::Helper
+end
+class Chef::Resource
+    include RightScale::RightImage::Helper
+end
+class Chef::Provider
+  include Chef::Mixin::ShellOut
+end
 
-#service "httpd" do
-#  action :start
-#end
-
-#include_recipe "block_device"
+ruby_block "test block" do 
+  block do
+    shell_out! "exit 1"
+  end
+end

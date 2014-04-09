@@ -1,10 +1,9 @@
 maintainer       "YOUR_COMPANY_NAME"
 maintainer_email "YOUR_EMAIL"
 license          "All rights reserved"
-description      "Installs/Configures apacheqs"
-long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
+description      "Peters quick test cookbook"
+long_description "Peters quick test cookbook"
 version          "0.0.1"
 
-#depends "block_device"
 recipe 'apacheqs::default', 'Nothing, test for now'
 
