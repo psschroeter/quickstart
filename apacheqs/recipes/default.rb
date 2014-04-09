@@ -32,10 +32,10 @@ log "In the default recipe"
 
 
 class Chef::Recipe
-    include RightScale::RightImage::Helper
+  include Chef::Mixin::ShellOut
 end
 class Chef::Resource
-    include RightScale::RightImage::Helper
+  include Chef::Mixin::ShellOut
 end
 class Chef::Provider
   include Chef::Mixin::ShellOut
