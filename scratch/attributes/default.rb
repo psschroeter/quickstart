@@ -1,0 +1,1 @@
+default[:scratch][:name] = "Pedro"
