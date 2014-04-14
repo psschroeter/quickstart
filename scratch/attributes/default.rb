@@ -1,1 +1,1 @@
-default[:scratch][:name] = "Pedro"
+default[:scratch][:name] = "Привет world"

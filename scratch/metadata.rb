@@ -10,3 +10,8 @@ recipe 'scratch::default', 'Nothing'
 recipe 'scratch::utf8', 'print some utf8 text'
 recipe 'scratch::chef_exit', 'Exit chef block'
 
+attribute "scratch/name",
+  :display_name => "Display Input",
+  :description => "Displays this input",
+  :required => "required"
+
