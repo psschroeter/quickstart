@@ -3,6 +3,8 @@ log "Привет comrades"
 
 log "Input is #{node[:scratch][:name]}"
 
-bash "utf8 bash" do
-  code "echo Привет from bash"
+unless platform_family?("windows")
+  bash "utf8 bash" do
+    code "echo Привет from bash"
+  end
 end
