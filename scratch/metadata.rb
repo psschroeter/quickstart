@@ -9,9 +9,17 @@ version          "0.0.1"
 recipe 'scratch::default', 'Nothing'
 recipe 'scratch::utf8', 'print some utf8 text'
 recipe 'scratch::chef_exit', 'Exit chef block'
+recipe 'scratch::init6', 'Restart using init 6'
+recipe 'scratch::sleep', 'Sleep for X seconds'
 
 attribute "scratch/name",
   :display_name => "Display Input",
   :description => "Displays this input",
   :required => "required"
+
+attribute "scratch/sleep_sec",
+  :display_name => "Sleep N seconds",
+  :required => "recommended",
+  :default => "180",
+  :description => "Sleep N seconds"
 
