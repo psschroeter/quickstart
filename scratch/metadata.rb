@@ -11,6 +11,7 @@ recipe 'scratch::utf8', 'print some utf8 text'
 recipe 'scratch::chef_exit', 'Exit chef block'
 recipe 'scratch::init6', 'Restart using init 6'
 recipe 'scratch::sleep', 'Sleep for X seconds'
+recipe 'scratch::credentials', 'Log secret credential'
 
 attribute "scratch/name",
   :display_name => "Display Input",
@@ -22,4 +23,10 @@ attribute "scratch/sleep_sec",
   :required => "recommended",
   :default => "180",
   :description => "Sleep N seconds"
+
+attribute "scratch/secret",
+  :display_name => "Secret",
+  :required => "recommended",
+  :default => "test",
+  :description => "Secret, use credential"
 
