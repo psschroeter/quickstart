@@ -27,3 +27,7 @@ ruby_block "test checksum" do
   end
 end
 
+
+if platform_family?("debian")
+  execute "gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.clo7FiH8IV --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver keyserver.ubuntu.com --recv E5267A6C"
+end
