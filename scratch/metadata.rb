@@ -11,6 +11,7 @@ recipe 'scratch::utf8', 'print some utf8 text'
 recipe 'scratch::chef_exit', 'Exit chef block'
 recipe 'scratch::init6', 'Restart using init 6'
 recipe 'scratch::sleep', 'Sleep for X seconds'
+recipe 'scratch::arrays', 'print arrays'
 recipe 'scratch::credentials', 'Log secret credential'
 
 attribute "scratch/name",
