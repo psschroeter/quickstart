@@ -30,3 +30,9 @@ attribute "scratch/secret",
   :default => "test",
   :description => "Secret, use credential"
 
+attribute "scratch/testarray",
+  :display_name => "testarray",
+  :description => "Test array input",
+  :required => "recommended",
+  :default => ["1","2","3","4","3","2","1"],
+  :type => "array"
