@@ -19,7 +19,7 @@ end
 
 # errors out if Encoding.default_internal set only?
 ruby_block "test checksum" do 
-  block do 
+  block do
     require 'digest/md5'
     f = ::File.open(location,"rb")
     actual = Digest::MD5.hexdigest(f.read)
@@ -27,6 +27,12 @@ ruby_block "test checksum" do
   end
 end
 
+# errors out if Encoding.default_internal set only?
+ruby_block "set attribute" do
+  block do
+    node.set[:scratch][:foo2] = "Привет"
+  end
+end
 
 if platform_family?("debian")
   execute "gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /tmp/tmp.clo7FiH8IV --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyserver keyserver.ubuntu.com --recv E5267A6C"
